@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const refreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+// process.env.NODE_ENV = 'production'
 
 module.exports = {
     name: 'bottom-setting',
@@ -45,7 +46,6 @@ module.exports = {
         filename: '[name].js',
         publicPath: '/dist/', 
     }, // 출력
-
     devServer: {
         devMiddleware: {publicPath: '/dist/'}, //생성해주는 경로
         static: {directory: path.resolve(__dirname)}, //실제 경로
