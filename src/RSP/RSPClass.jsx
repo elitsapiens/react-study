@@ -1,10 +1,15 @@
 import React from "react";
 
+
+const rspCoord = {
+
+}
+
 // https://tofusand-dev.tistory.com/19 -- 라이프 사이클 관련 문서
 //  React lifeCycle (in case Class)
 //  constructor -> render -> ref -> componentDidMount
 // (setState, props가 변경될 때) -> shouldComponentUpdate(true) -> render -> componentDidUpdate
-// 부모가 나를 없앴을 경우 -> componentWillUnmount ->  소멸
+// 부모가 나를 없앴을 경우 -> componentWillUnmount ->  소멸 
 class RSPClass extends React.Component {
     state = {
         result: '',
@@ -19,7 +24,7 @@ class RSPClass extends React.Component {
         const {imgCoord} = this.state;
         this.interval = setInterval(() => {
             if(imgCoord === '0') {
-                
+
             }
         }, 1000);
     }
