@@ -6,6 +6,10 @@
 
 import React from 'react';
 import ReactDom from 'react-dom';
-import NumberBaseball from './NumberBaseball';
+import NumberBaseball from './src/NumberBaseball/NumberBaseball';
+import ResponseCheck from './src/ResponseCheck/ResponseCheck';
+import RSPClass from './src/RSP/RSPClass';
+import { hot } from 'react-hot-loader/root';
 
-ReactDom.render(<NumberBaseball/>, document.querySelector('#root'));
+const Hot = hot(RSPClass);
+ReactDom.render(<Hot/>, document.querySelector('#root'));

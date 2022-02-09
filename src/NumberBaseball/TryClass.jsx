@@ -1,6 +1,6 @@
 import React from "react";
 
-class Try extends React.Component {
+class TryClass extends React.Component {
     render() {
         return (
             <li key={this.props.value+this.props.index}>
@@ -10,4 +10,4 @@ class Try extends React.Component {
     }
 }
 
-export default Try;
+export default TryClass;

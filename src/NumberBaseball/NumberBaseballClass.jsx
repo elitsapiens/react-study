@@ -1,5 +1,5 @@
 import React from "react";
-import Try from "./Try";
+import Try from "./TryClass";
 
 function getNumbers () {
     const candidate = [1,2,3,4,5,6,7,8,9];
@@ -11,7 +11,7 @@ function getNumbers () {
     return array;
 }
 
-class NumberBaseball extends React.Component {
+class NumberBaseballClass extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -70,4 +70,4 @@ class NumberBaseball extends React.Component {
     }
 }
 
-export default NumberBaseball;
+export default NumberBaseballClass;
