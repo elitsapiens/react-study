@@ -9,7 +9,8 @@ import ReactDom from 'react-dom';
 import NumberBaseball from './src/NumberBaseball/NumberBaseball';
 import ResponseCheck from './src/ResponseCheck/ResponseCheck';
 import RSPClass from './src/RSP/RSPClass';
+import Lotto from './src/Lotto/Lotto';
 import { hot } from 'react-hot-loader/root';
 
-const Hot = hot(RSPClass);
+const Hot = hot(Lotto);
 ReactDom.render(<Hot/>, document.querySelector('#root'));
