@@ -28,6 +28,21 @@ const Lotto = () => {
     const [redo, setRedo] = useState(false);
     const timeout = useRef([]);
 
+    // useEffect 패턴
+    useEffect(() => {
+        // ajax 별도 호출
+    },[]); //componetDidMount만 하고 싶은경우
+
+    const mounted = useRef(false);
+    useEffect(() => {
+        if(!mounted.current) {
+            mounted.current = true;
+        } else {
+            // ajax 호출
+        }
+    },[/*변경되는값*/]); //componetDidUpdate만 하고 싶은 경우
+    // useEffect 패턴
+    
     useEffect(() => {
         for (let i = 0; i< winNumbers.length - 1; i++) {
             timeout.current[i] = setTimeout(() => {
