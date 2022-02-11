@@ -33,6 +33,7 @@ module.exports = {
                     '@babel/plugin-proposal-class-properties',
                     'react-refresh/babel',
                 ],
+                exclude: path.join(__dirname, 'node_modules'),
             }
         }]
     }, // 적용
@@ -47,6 +48,7 @@ module.exports = {
         publicPath: '/dist/', 
     }, // 출력
     devServer: {
+        historyApiFallback: true,
         devMiddleware: {publicPath: '/dist/'}, //생성해주는 경로
         static: {directory: path.resolve(__dirname)}, //실제 경로
         hot: true

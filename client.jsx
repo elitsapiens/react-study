@@ -11,7 +11,8 @@ import ResponseCheck from './src/ResponseCheck/ResponseCheck';
 import RSPClass from './src/RSP/RSPClass';
 import Lotto from './src/Lotto/Lotto';
 import TicTacToe from './src/TicTacToe/TicTacToe';
-import { hot } from 'react-hot-loader/root';
+import Games from './react-router/Games';
+// import { hot } from 'react-hot-loader/root'; //react-router 사용시 빠져야 할 부분
 
-const Hot = hot(TicTacToe);
-ReactDom.render(<Hot/>, document.querySelector('#root'));
+// const Hot = hot(Games); //react-router 사용시 빠져야 할 부분
+ReactDom.render(<Games/>, document.querySelector('#root'));
