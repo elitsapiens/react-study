@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, memo } from "react";
 import styled from "styled-components";
 import { CLICK_CELL } from "./TicTacToe";
 
@@ -10,7 +10,8 @@ const StyledTd = styled.td`
     text-align: center;
 `;
 
-const BoardCell = ({rowIndex, cellIndex, dispatch, cellData}) => {
+const BoardCell = memo(({rowIndex, cellIndex, dispatch, cellData}) => {
+    console.log(cellData);
     const cellClick = useCallback(() => {
         if(cellData) {
             return;
@@ -22,6 +23,6 @@ const BoardCell = ({rowIndex, cellIndex, dispatch, cellData}) => {
     return (
         <StyledTd onClick={cellClick}>{cellData}</StyledTd>
     )
-}
+});
 
 export default BoardCell;

@@ -5,7 +5,7 @@ const BoardRow = memo(({rowData, rowIndex, dispatch}) => {
     return (
         <tr>
             {Array(rowData.length).fill().map((td, i)=>{
-                return <BoardCell key={i} dispatch={dispatch}></BoardCell>
+                return <BoardCell key={i} rowIndex={rowIndex} cellIndex={i} dispatch={dispatch} cellData={rowData[i]}></BoardCell>
             })}
         </tr>
     )

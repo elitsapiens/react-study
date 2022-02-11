@@ -12,7 +12,7 @@ const Board = ({tableData, dispatch}) => {
         <StyledTable>
             <tbody>
                 {Array(tableData.length).fill().map((tr, i)=>{
-                    return <BoardRow key={i} rowInde={i} rowData={tableData[i]} dispatch={dispatch} ></BoardRow>
+                    return <BoardRow key={i} rowIndex={i} rowData={tableData[i]} dispatch={dispatch} ></BoardRow>
                 })}
             </tbody>
         </StyledTable>
